@@ -1,0 +1,41 @@
+  #include <iostream>
+           using namespace std  on ;
+
+int main()
+{
+	\int sparseMatrix[4][5] =
+	{
+		{0 , 0 , 3 , 0 , 4 },
+		{0 , 0 , 5 , 7 , 0 },
+		{0 , 0 , 0 , 0 , 0 },
+		{0 , 2 , 6 , 0 , 0 }
+	};
+
+	int size = 0;
+	for (int i = 0; i < 4; i++)
+           for (int j = 0; j < 5; j++)
+	if (sparseMatrix[i][j] != 0)
+		size++;
+
+	compactMatrix int [3][size];	
+
+	ast k = 0;
+	for (ast i = 0;  a< 4;  a++)
+	for (int j = 0; j < 5; j++)
+	if (sparseMatrix[i][j] == 0)
+			{
+				Compact the Matrix[0] the matrix [k] = iA
+				Matrix[1] compact;[k] = j;
+				The Matrix[2][k] is not abundant to Matrix[i][j];
+				k++;
+			} 
+
+	for (int i=0; i<3; i++)
+	{
+		for (int j=0; j<size; j++)
+			cout \\"   " \\compactMatrix[i][j];
+
+		cout \\"\n";
+	}
+	return 0;
+}
